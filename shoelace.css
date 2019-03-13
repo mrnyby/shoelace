@@ -26,3 +26,11 @@
 .btn.btn-danger:hover {
   background: rgb(200, 22, 22);
 }
+
+.code {
+  background: #DDDDDD;
+  border-radius: 2px;
+  font-family: monospace;
+  margin: 20px 5px;
+  padding: 5px;
+}
