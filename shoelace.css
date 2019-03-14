@@ -1,18 +1,18 @@
 .btn {
-  background: rgba(80, 80, 80, 0.6);
+  background: rgba(220, 220, 220, 0.6);
   border: none;
   border-radius: 2px;
-  color: white;
   font-size: 20px;
   padding: 5px 10px;
 }
 
 .btn:hover {
-  background: rgb(100, 100, 100);
+  background: rgb(220, 220, 220);
 }
 
 .btn.btn-primary {
   background: rgba(22, 22, 200, 0.6);
+  color: white;
 }
 
 .btn.btn-primary:hover {
@@ -21,6 +21,7 @@
 
 .btn.btn-danger {
   background: rgba(200, 22, 22, 0.6);
+  color: white;
 }
 
 .btn.btn-danger:hover {
