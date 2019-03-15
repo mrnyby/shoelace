@@ -4,10 +4,12 @@
   border-radius: 2px;
   font-size: 20px;
   padding: 5px 10px;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
   background: rgb(220, 220, 220);
+  box-shadow: 0 0 3px 0 #333333;
 }
 
 .btn.btn-primary {
@@ -34,4 +36,79 @@
   font-family: monospace;
   margin: 20px 5px;
   padding: 5px;
+}
+
+@keyframes x {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: x 1s infinite linear;
+}
+
+@font-face {
+  font-family: 'display';
+  src: url('display.otf');
+}
+
+h2 {
+  font-family: 'display';
+}
+
+body {
+  font-family: Roboto;
+}
+
+@media screen and (max-width: 600px) {
+  .medium-screen {
+    display: none;
+  }
+
+  .large-screen {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .small-screen {
+    display: none;
+  }
+
+  .large-screen {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .small-screen {
+    display: none;
+  }
+
+  .medium-screen {
+    display: none;
+  }
+}
+
+.navbar {
+  align-items: center;
+  background: #333333;
+  color: white;
+  display: flex;
+  height: 40px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.navbar > .left {
+  margin-right: auto;
+}
+
+.navbar > .right {
+  margin-left: auto;
 }
