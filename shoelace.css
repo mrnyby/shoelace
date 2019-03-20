@@ -1,15 +1,32 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'display';
+  src: url('display.otf');
+}
+
+h2 {
+  font-family: 'display';
+  margin-top: 40px;
+}
+
+body {
+  font-family: Roboto;
+}
+
+/* Buttons */
+
 .btn {
   background: rgba(220, 220, 220, 0.6);
   border: none;
   border-radius: 2px;
   font-size: 20px;
   padding: 5px 10px;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s;
 }
 
 .btn:hover {
   background: rgb(220, 220, 220);
-  box-shadow: 0 0 3px 0 #333333;
 }
 
 .btn.btn-primary {
@@ -30,6 +47,8 @@
   background: rgb(200, 22, 22);
 }
 
+/* Code blocks */
+
 .code {
   background: #DDDDDD;
   border-radius: 2px;
@@ -38,32 +57,19 @@
   padding: 5px;
 }
 
-@keyframes x {
-  0% {
-    transform: rotate(0deg);
-  }
+/* Spinner */
 
+@keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
 
 .spin {
-  animation: x 1s infinite linear;
+  animation: spin 1s infinite linear;
 }
 
-@font-face {
-  font-family: 'display';
-  src: url('display.otf');
-}
-
-h2 {
-  font-family: 'display';
-}
-
-body {
-  font-family: Roboto;
-}
+/* Screen sizing */
 
 @media screen and (max-width: 600px) {
   .medium-screen {
@@ -94,6 +100,8 @@ body {
     display: none;
   }
 }
+
+/* Navbar */
 
 .navbar {
   align-items: center;
